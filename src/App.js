@@ -10,12 +10,11 @@ import "./App.css";
 function App() {
   return (
     <BrowserRouter>
+    <Navbar />
+    <Header />
     <Routes>
-    <div className="App">
-      <Navbar />
-      <Header />
       <Route path="/" element={<Home />} />
-    </div>
+
     </Routes>
     </BrowserRouter>
   );

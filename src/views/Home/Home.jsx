@@ -14,11 +14,11 @@ export default function App() {
   return (
     <MDBCard>
         <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-            <MDBCardImage src='https://C:\Users\carol\OneDrive\Desktop\two-faced\src\assets\MeCard.png' fluid alt='...' />
-            {/*<a href='#'>
+        <MDBCardImage src='./assets/MeCard.png' fluid alt='...' />
+
+            <a href='/'>
                 <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
             </a>
-  */}
         </MDBRipple>
         <MDBCardBody>
             <MDBCardTitle>Card title</MDBCardTitle>
