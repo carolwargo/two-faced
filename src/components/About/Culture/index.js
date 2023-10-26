@@ -3,12 +3,12 @@ import React from 'react';
 export default function Culture() {
 return(
     <div>
-    <h5>WHAT WE BELIEVE</h5>
-    <h2>Culture</h2>
+    <h6>WHAT WE BELIEVE</h6>
+    <h1><strong>Culture</strong></h1>
     <br></br>
-    
+    <h5><strong>STANDARDS SET:</strong></h5>
     <p>
-      At TWO-FACED, we believe in the power of collaboration and innovation.
+      At <strong> TWO-FACED</strong>, we believe in the power of collaboration and innovation.
       We're driven by a passion for technology and design, and we're committed
       to leveraging these strengths to create solutions that drive real impact
       for our clients. Our belief in continuous learning and staying at the
@@ -19,10 +19,8 @@ return(
       Through a combination of creativity, technical expertise, and unwavering
       dedication, we aim to bring our client's visions to life.
     </p>
-    
     <br></br>
-
-    <h5>CULTURE:</h5>
+    <h5><strong>FOUNDATION:</strong></h5>
     <p>
       Our culture is built on a foundation of curiosity and a thirst for
       knowledge. We're a team of tech enthusiasts who thrive on challenges and
@@ -32,12 +30,21 @@ return(
       find an environment that encourages experimentation and fosters
       creativity. We're not just colleagues; we're a community united by a
       shared love for technology. We celebrate achievements, both big and
-      small, and we're always ready to support one another. At TWO-FACED, we
+      small, and we're always ready to support one another. At <strong> TWO-FACED</strong>, we
       don't just work together, we grow together. We believe that a strong
       team is the cornerstone of success, and we're committed to providing a
       space where every member can thrive. Our culture is not just about the
       work we do, but also about the relationships we build along the way.
     </p>
+    <br></br>
+    <h5><strong>OUR STRENTH IN DIVERSITY:</strong> </h5>
+    <p>At TWO-FACED, we believe that a diverse and inclusive workplace is the bedrock of innovation and progress. We're committed to creating an environment where every individual, regardless of background, identity, or perspective, feels valued and empowered to contribute their unique talents.
+
+We understand that diversity extends beyond race and gender, encompassing a wide range of experiences, abilities, and viewpoints. Our inclusive culture encourages open dialogue, mutual respect, and active listening. We actively seek out diverse perspectives, knowing that it's the key to unlocking creativity and driving forward-thinking solutions.
+
+By embracing diversity, we not only enrich our own understanding, but also create a dynamic and vibrant community. We celebrate the richness of ideas that come from different life experiences and are dedicated to providing equal opportunities for all. Our goal is to foster an environment where every team member feels heard, supported, and inspired to reach their full potential.
+
+In this inclusive space, we're committed to dismantling barriers, challenging biases, and championing equality. We recognize that diversity is not just a buzzword, but a fundamental aspect of who we are and what we stand for. Together, we're creating a future where every voice is heard, every idea is valued, and every individual thrives.</p>
   </div>
 
 )

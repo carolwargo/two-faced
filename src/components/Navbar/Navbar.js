@@ -11,6 +11,8 @@ import {
   MDBCollapse
 } from 'mdb-react-ui-kit';
 
+import logo from "../../assets/images/logo.png"
+
 export default function Nav() {
   const [showNavText, setShowNavText] = useState(false);
 
@@ -23,7 +25,7 @@ export default function Nav() {
              >
         <MDBContainer fluid className='bg-white'>
           <MDBNavbarBrand href='#' className='bg-white'>
-            Navbar w/ text
+            <img src={logo} alt='Logo'/>
           </MDBNavbarBrand>
           <MDBNavbarToggler
             className='bg-white'

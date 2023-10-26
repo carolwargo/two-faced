@@ -4,11 +4,11 @@ export default function Brand() {
   return (
     <div>
       <h6>WHY TWO-FACED</h6>
-      <h2>Our Brand</h2>
+      <h1><strong>Our Brand</strong></h1>
       <br></br>
-      <h5>ORIGIN:</h5>
+      <h5><strong>THE ORIGIN OF OUR BRAND:</strong></h5>
       <p>
-        At TWO-FACED, we believe in the power of collaboration and innovation.
+        At <strong> TWO-FACED</strong>, we believe in the power of collaboration and innovation.
         We're driven by a passion for technology and design, and we're committed
         to leveraging these strengths to create solutions that drive real impact
         for our clients. Our belief in continuous learning and staying at the
@@ -18,25 +18,6 @@ export default function Brand() {
         as an opportunity to not just meet expectations, but to exceed them.
         Through a combination of creativity, technical expertise, and unwavering
         dedication, we aim to bring our client's visions to life.
-      </p>
-
-      <br></br>
-
-      <h5>CULTURE:</h5>
-      <p>
-        Our culture is built on a foundation of curiosity and a thirst for
-        knowledge. We're a team of tech enthusiasts who thrive on challenges and
-        see every problem as an opportunity for growth. Collaboration is at the
-        heart of what we do; we value diverse perspectives and believe that the
-        best solutions emerge from collective effort. In our workspace, you'll
-        find an environment that encourages experimentation and fosters
-        creativity. We're not just colleagues; we're a community united by a
-        shared love for technology. We celebrate achievements, both big and
-        small, and we're always ready to support one another. At TWO-FACED, we
-        don't just work together, we grow together. We believe that a strong
-        team is the cornerstone of success, and we're committed to providing a
-        space where every member can thrive. Our culture is not just about the
-        work we do, but also about the relationships we build along the way.
       </p>
     </div>
   );
