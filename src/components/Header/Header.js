@@ -1,26 +1,42 @@
 import React from 'react';
-import "../../App.css"
+import {
+  MDBBtn
+} from 'mdb-react-ui-kit';
 
+import CoverIndustrial from "../../assets/images/CoverIndustrial.png"
 
 export default function Header() {
 
-    return(
-<header className="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-        <div className="w3-display-left w3-text-white" style={{ padding: '48px' }}>
-          <span className="w3-jumbo w3-hide-small">Start something that matters</span><br />
-          <span className="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br />
-          <span className="w3-large">Stop wasting valuable time with projects that just aren't you.</span>
-          <p><a href="#about" className="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  return (
+    <header>
+      <div
+        className='p-5 text-center bg-image position-relative' // Add position-relative
+        style={{ 
+          backgroundImage: `url(${CoverIndustrial})`,
+          height: '400px' 
+        }}
+      >
+        <div className='mask' 
+          style={{ 
+            backgroundColor: 'rgba(0, 0, 0, 0.5)',
+            position: 'absolute', // Position absolute
+            top: 0, // Align to the top
+            left: 0, // Align to the left
+            width: '100%', // Full width
+            height: '100%' // Full height
+          }}
+        >
+          <div className='d-flex justify-content-center align-items-center h-100'>
+            <div className='text-white'>
+              <h1 className='mb-3'>Heading</h1>
+              <h4 className='mb-3'>Subheading</h4>
+              <MDBBtn tag="a" outline size="lg">
+                Call to action
+              </MDBBtn>
+            </div>
+          </div>
         </div>
-        <div className="w3-display-bottomleft w3-text-grey w3-large" style={{ padding: '24px 48px' }}>
-          <i className="fa fa-facebook-official w3-hover-opacity"></i>
-          <i className="fa fa-instagram w3-hover-opacity"></i>
-          <i className="fa fa-snapchat w3-hover-opacity"></i>
-          <i className="fa fa-pinterest-p w3-hover-opacity"></i>
-          <i className="fa fa-twitter w3-hover-opacity"></i>
-          <i className="fa fa-linkedin w3-hover-opacity"></i>
-        </div>
-      </header>
-
-    )
+      </div>
+    </header>
+  );
 }
