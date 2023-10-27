@@ -29,6 +29,7 @@ export default function intro() {
               style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}
             >
               <h1>
+              <img width="96" height="96" src="https://img.icons8.com/color/96/rgb-circle-2--v1.png" alt="rgb-circle-2--v1"/>
                 <strong>DYNAMIC WEBSITE DEVELOPMENT</strong>
               </h1>
             </MDBBtn>
