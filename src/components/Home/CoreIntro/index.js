@@ -1,8 +1,8 @@
 import React from "react";
 
-import { Row, Col } from "react-bootstrap";
+import {Row,Col} from "react-bootstrap";
 import { motion } from "framer-motion";
-import { MDBBtn } from "mdb-react-ui-kit";
+import Card from 'react-bootstrap/Card';
 
 
 
@@ -20,102 +20,124 @@ export default function intro() {
         </p>
       </div>
       <br></br>
-      <Row>
-        <Col>
-          <motion.div whileHover={{ scale: 0.95 }}>
-            <MDBBtn
-              rippleColor="light"
-              color="white"
-              style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}
-            >
-              <h1>
-              <img width="96" height="96" src="https://img.icons8.com/color/96/rgb-circle-2--v1.png" alt="rgb-circle-2--v1"/>
-                <strong>DYNAMIC WEBSITE DEVELOPMENT</strong>
-              </h1>
-            </MDBBtn>
-          </motion.div>
-        </Col>
-        <Col>
-          <motion.div whileHover={{ scale: 0.95 }}>
-            <MDBBtn
-              rippleColor="light"
-              color="white"
-              style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}
-            >
-              <h1>
-                <strong>SOFTWARE DEVELOPMENT</strong>
-              </h1>
-            </MDBBtn>
-          </motion.div>
-        </Col>
+    
+
+
+    <Row>
+      <Col>
+    
+    <motion.div whileHover={{ scale: .95 }} whileTap={{ scale: 0.9 }}>
+      <Card>
+        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Body>
+          <Card.Title>Card title</Card.Title>
+          <Card.Text>
+            This card has supporting text below as a natural lead-in to
+            additional content.{' '}
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">Last updated 3 mins ago</small>
+        </Card.Footer>
+      </Card>
+      </motion.div>
+      </Col>
+      <Col>
+      <motion.div whileHover={{ scale: .95 }} whileTap={{ scale: 0.9 }}>
+      <Card>
+        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Body>
+          <Card.Title>Card title</Card.Title>
+          <Card.Text>
+            This card has supporting text below as a natural lead-in to
+            additional content.{' '}
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">Last updated 3 mins ago</small>
+        </Card.Footer>
+      </Card>
+      </motion.div>
+      </Col>
+      <Col>
+      <motion.div whileHover={{ scale: .95 }} whileTap={{ scale: 0.9 }}>
+      <Card>
+        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Body>
+          <Card.Title>Card title</Card.Title>
+          <Card.Text>
+            This card has supporting text below as a natural lead-in to
+            additional content.{' '}
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">Last updated 3 mins ago</small>
+        </Card.Footer>
+      </Card>
+      </motion.div>
+      </Col>
       </Row>
-      <br></br>
+<br></br>
       <Row>
-        <Col>
-          <motion.div whileHover={{ scale: 0.95 }}>
-            <MDBBtn
-              rippleColor="light"
-              color="white"
-              style={{ 
-                boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px", 
-                width: "100%",
-                backgroundColor: "#7B516A",
-                color: "white",
-            }}
-            >
-              <h1 className="color-white"
-                    style={{
-                        fontSize: "2rem",
-                        padding: "1rem",
-                    }}>
-                <strong>E-COMMERCE SOLUTIONS</strong>
-              </h1>
-            </MDBBtn>
-          </motion.div>
-        </Col>
-        <Col>
-          <motion.div whileHover={{ scale: 0.95 }}>
-            <MDBBtn
-              rippleColor="light"
-              color="white"
-              style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}
-            >
-              <h1>
-                <strong>GRAPHIC DESIGN ELEMENTS</strong>
-              </h1>
-            </MDBBtn>
-          </motion.div>
-        </Col>
-      </Row>
-      <br></br>
-      <Row>
-        <Col>
-          <motion.div whileHover={{ scale: 0.95 }}>
-            <MDBBtn
-              rippleColor="light"
-              color="white"
-              style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}
-            >
-              <h1>
-                <strong>SOCIAL MEDIA INTEGRATION</strong>
-              </h1>
-            </MDBBtn>
-          </motion.div>
-        </Col>
-        <Col>
-          <motion.div whileHover={{ scale: 0.95 }}>
-            <MDBBtn
-              rippleColor="light"
-              color="white"
-              style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}
-            >
-              <h1>
-                <strong>MOBILE APP DEVELOPMENT</strong>
-              </h1>
-            </MDBBtn>
-          </motion.div>
-        </Col>
+      <Col>
+    
+    <motion.div whileHover={{ scale: .95 }} whileTap={{ scale: 0.9 }}>
+      <Card>
+        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Body>
+          <Card.Title>Card title</Card.Title>
+          <Card.Text>
+            This card has supporting text below as a natural lead-in to
+            additional content.{' '}
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">Last updated 3 mins ago</small>
+        </Card.Footer>
+      </Card>
+      </motion.div>
+      </Col>
+      <Col>
+      <motion.div whileHover={{ scale: .95 }} whileTap={{ scale: 0.9 }}>
+      <Card>
+        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Body>
+          <Card.Title>Card title</Card.Title>
+          <Card.Text>
+            This card has supporting text below as a natural lead-in to
+            additional content.{' '}
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">Last updated 3 mins ago</small>
+        </Card.Footer>
+      </Card>
+      </motion.div>
+      </Col>
+      <Col>
+      <motion.div whileHover={{ scale: .95 }} whileTap={{ scale: 0.9 }}>
+      <Card>
+        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Body>
+          <Card.Title>Card title</Card.Title>
+          <Card.Text>
+            This card has supporting text below as a natural lead-in to
+            additional content.{' '}
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">Last updated 3 mins ago</small>
+        </Card.Footer>
+      </Card>
+      </motion.div>
+      </Col>
       </Row>
     </div>
   );
 }
+
+
+
+
+
+    
