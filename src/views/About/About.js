@@ -11,14 +11,11 @@ export default function About() {
   return (
     <div>
       <br></br>
-      <h1>
-        <strong>WHO WE ARE</strong>
-      </h1>
-      <br></br>
+      <h1 style={{fontSize:"4rem"}}>WHO WE ARE</h1>
       <br></br>
       <p>"YOUR PARTNER IN IT SUCCESS AND INNOVATION"</p>
       <h1>
-        <strong>We are Two-Faced IT</strong>
+        <strong>Two-Faced</strong>
       </h1>
       <p>
         "A Passionate Team Dedicated To Empowering Businesses Through harnessing
@@ -29,9 +26,7 @@ export default function About() {
         experiences while maximizing system performance. Our forte lies in
         transforming intricate challenges into refined, elegant solutions."
       </p>
-
       <br></br>
-
       <p>"WHERE DEVELOPMENT MEETS DESIGN"</p>
       <h1>
         <strong>What we do</strong>
@@ -43,6 +38,7 @@ export default function About() {
         specialized app creation, our team is proficient in turning your ideas
         into functional, user-friendly applications.
       </p>
+
 
       <br></br>
 

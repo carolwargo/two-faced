@@ -53,7 +53,7 @@ export default function Footer() {
           <img src={LogoIcon} alt="LogoIcon" 
         style={{
             height:"auto", 
-            width:"35%",
+            width:"45%",
             }}/>
           </h6>
           <p>
@@ -123,7 +123,13 @@ export default function Footer() {
                     backgroundColor:"rgba(0, 0, 0, 0.05)",
             }}
             >
-    © 2023 Copyright: <span style={{color:"#7B516A"}}><b>TWO</b></span>FACED
+    © 2023 Copyright: <span><b>   <img src={LogoIcon} alt="LogoIcon" 
+        style={{
+            height:"auto", 
+            width:"10%",
+            }}/>
+            </b>
+            </span>
     
 </div>
   {/* Copyright */}

@@ -18,7 +18,7 @@ export default function Header() {
       >
         <div className='mask' 
           style={{ 
-            backgroundColor: 'rgba(0, 0, 0, .25)',
+            backgroundColor: 'rgba(0, 0, 0, .5)',
             position: 'absolute', // Position absolute
             top: 0, // Align to the top
             left: 0, // Align to the left
@@ -31,8 +31,9 @@ export default function Header() {
               <h1 className='mb-3'
                 style={{textShadow: '1px 2px #000000'}}
               ><b>THINK OF THE POSSIBILITIES...</b></h1>
-              <h4 className='mb-3'>Subheading</h4>
-              <MDBBtn tag="a" outline size="lg">
+              <h4 className='mb-3'>We can help you get there!
+            </h4>
+              <MDBBtn tag="a" size="lg">
                 Call to action
               </MDBBtn>
             </div>

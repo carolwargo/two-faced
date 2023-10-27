@@ -9,20 +9,6 @@ import Card from 'react-bootstrap/Card';
 export default function intro() {
   return (
     <div>
-      <div className="text-center">
-        <h1>Unlock the Full Potential of Your Business</h1>
-        <p>
-          In today's dynamic market, businesses need more than just survival
-          tactics – they need strategies that drive growth and sustainability.
-          At [Your Company], we're committed to helping you add value to your
-          operations. Our tailored solutions are designed to streamline your
-          organization, eliminate redundancies, and reduce overhead costs.
-        </p>
-      </div>
-      <br></br>
-    
-
-
     <Row>
       <Col>
     
