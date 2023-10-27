@@ -18,7 +18,7 @@ export default function Header() {
       >
         <div className='mask' 
           style={{ 
-            backgroundColor: 'rgba(0, 0, 0, 0.5)',
+            backgroundColor: 'rgba(0, 0, 0, .25)',
             position: 'absolute', // Position absolute
             top: 0, // Align to the top
             left: 0, // Align to the left

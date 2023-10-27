@@ -24,10 +24,11 @@ export default function DevServices() {
 
   return (
     <div>
-    
+    <br></br>
 <div>
         <Row>
-        <Col><h2>1. Development Services:</h2>
+        <Col>
+        <h4><strong>Core Services</strong></h4>
         <p>Empower your online presence with our development expertise. Whether it's crafting intuitive front-end interfaces or building robust back-end systems, we're equipped to handle it all. From full-stack development to specialized app creation, our team is proficient in turning your ideas into functional, user-friendly applications.</p>
         </Col>
         </Row>
@@ -35,26 +36,45 @@ export default function DevServices() {
         <Row>
         <Col>
         <ul>
-        <li>Front-end development</li>
-        <li>Back-end development</li>
+        <li>Dynamic Website Development</li>
+        <li>Software Development Solutions</li>
         </ul>
         </Col>
         <Col>
         <ul>
-        <li>Full-stack development</li>
-        <li>Custom website development</li>
+        <li>E-Commerce Integration</li>
+        <li>Graphic Design</li>
         </ul>
         </Col>
         <Col>
         <ul>
-        <li>E-commerce development</li>
-        <li>Development of custom web-based applications</li>
+        <li>Social Media Integration</li>
+        <li>Mobile App Development</li>
+</ul>
+        </Col>
+     
+        </Row>
+        <br></br>
+        <Row>
+        <Col>
+        <h4><strong>Programs & Partnerships</strong></h4>
+        <ul>
+        <li>Affiliate Program Start-Up</li>
+        <li>"Partner Up Program"</li>
 </ul>
         </Col>
         <Col>
+        <h4><strong>Consulting Services </strong></h4>
         <ul>
-        <li>iOS and Android app development</li>
-        <li>Cross-platform development</li>
+        <li>Affiliate Program Start-Up</li>
+        <li>"Partner Up Program"</li>
+</ul>
+        </Col>
+        <Col>
+        <h4><strong>Training & Support</strong></h4>
+        <ul>
+        <li>Affiliate Program Start-Up</li>
+        <li>"Partner Up Program"</li>
 </ul>
         </Col>
         </Row>

@@ -11,7 +11,7 @@ import {
 } from 'mdb-react-ui-kit';
 
 
-import Intro from "../../components/Home/Intro/index"
+import CoreIntro from "../../components/Home/CoreIntro/index"
 import { Col, Row } from 'react-bootstrap';
 import MeCard from "../../assets/images/MeCard.png"
 
@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div className='home-page' id='home-page'>
  <br></br>
- <Intro/>
+ <CoreIntro/>
  <br></br>
  <br></br>
         <p>"YOUR PARTNER IN IT SUCCESS AND INNOVATION"</p>
