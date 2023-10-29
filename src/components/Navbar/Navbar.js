@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import {
   MDBNavbar,
   MDBContainer,
@@ -14,7 +15,7 @@ import {
 import LogoIcon from "../../assets/images/LogoIcon.png"
 
 export default function Nav() {
-  const [showNavText, setShowNavText] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className='bg-white'>
@@ -30,35 +31,39 @@ export default function Nav() {
                  />
           </MDBNavbarBrand>
           <MDBNavbarToggler
-            className='bg-white'
-            type='button'
-            data-target='#navbarText'
-            aria-controls='navbarText'
-            aria-expanded='false'
-            aria-label='Toggle navigation'
-            onClick={() => setShowNavText(!showNavText)}
-          >
-            <MDBIcon className='bg-white' icon='bars' />
-          </MDBNavbarToggler>
-          <MDBCollapse navbar show={showNavText}>
+          className='bg-white'
+          type='button'
+          data-target='#navbarText'
+          aria-controls='navbarText'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <MDBIcon className='bg-white' icon='bars' />
+        </MDBNavbarToggler>
+       
+          <MDBCollapse navbar show={isMenuOpen}>
             <MDBNavbarNav className='mr-auto mb-2 mb-lg-0 bg-white'>
               <MDBNavbarItem>
                 <MDBNavbarLink className='bg-white' href='/'>Home</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink className='bg-white' href='/services'>Services</MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink className='bg-white' href='/consulting'>Consulting</MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
                 <MDBNavbarLink className='bg-white' href='/about'>About</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink className='bg-white' href='/test'>Test</MDBNavbarLink>
+                <MDBNavbarLink className='bg-white' href='/services'>Services</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink className='bg-white' href='#'>Pricing</MDBNavbarLink>
+                <MDBNavbarLink className='bg-white'href='/consulting'>Consulting</MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink className='bg-white' href='/programs'>Programs</MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink className='bg-white' href='/contact'>Contact</MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink className='bg-white' href='/test'>Test</MDBNavbarLink>
               </MDBNavbarItem>
             </MDBNavbarNav>
             <span className='navbar-text bg-white'> </span>

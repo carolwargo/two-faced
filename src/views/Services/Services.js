@@ -1,8 +1,15 @@
 import React from "react";
+import { motion} from "framer-motion";
 import DevelopmentServices from "../../components/Services/Development/DevelopmentServices"
+
+
+
 export default function Services () {
     return (
-        <div>
+        <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}>
             <h1>Services</h1>
 
 <DevelopmentServices/>
@@ -35,6 +42,6 @@ export default function Services () {
 <br></br>
 <br></br>
 
-        </div>
+        </motion.div>
     )
 }

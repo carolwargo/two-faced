@@ -1,35 +1,25 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from "./components/Navbar/Navbar";
-import Header from "./components/Header/Header";
+
 import Footer from "./components/Footer/index";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "./views/Home/Home";
-import About from "./views/About/About";
-import Services from "./views/Services/Services";
-import Consulting from "./views/Consulting/Consulting";
-import Test from "./views/Test/Test";
 
 import "./App.css";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
   return (
-    <BrowserRouter>
+    <div className="App">
+        
+    <Router>
     <Navbar />
-    <Header />
-    <div className="container mt-5">
-    <Routes>
-     
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/services" element={<Services />} />
-      <Route path="/consulting" element={<Consulting />} />
-      <Route path="/test" element={<Test />} />
-
-    </Routes>
-    </div>
+ 
+    <AnimatedRoutes />
+   
     <Footer />
-    </BrowserRouter>
+    </Router>
+    </div>
   );
 }
 

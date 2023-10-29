@@ -8,7 +8,7 @@ export default function intro() {
   return (
     <div>
       <div className="text-center">
-        <h1>Unlock the Full Potential of Your Business</h1>
+        <h1>UNLOCK THE FULL POTENTIAL OF YOUR BUSINESS...</h1>
         <p>
           In today's dynamic market, businesses need more than just survival
           tactics – they need strategies that drive growth and sustainability.

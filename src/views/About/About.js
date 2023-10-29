@@ -6,16 +6,24 @@ import { Container } from "react-bootstrap";
 import Brand from "../../components/About/Brand/index";
 import Culture from "../../components/About/Culture/index";
 import CustomerService from "../../components/About/CustomerService/index";
+import LogoIcon from "../../assets/images/LogoIcon.png";
+
 
 export default function About() {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}>
+    
       <br></br>
       <h1 style={{fontSize:"4rem"}}>WHO WE ARE</h1>
       <br></br>
       <p>"YOUR PARTNER IN IT SUCCESS AND INNOVATION"</p>
       <h1>
-        <strong>Two-Faced</strong>
+        <strong><span>   <img src={LogoIcon} alt='LogoIcon' 
+               style={{ width: '100px', height: 'auto', marginTop: '-1rem' }} 
+                 /></span></strong>
       </h1>
       <p>
         "A Passionate Team Dedicated To Empowering Businesses Through harnessing
@@ -63,6 +71,6 @@ export default function About() {
       <MDBBtn color="secondary">CONTACT US</MDBBtn>
       </Container>
       </motion.div>
-    </div>
+    </motion.div>
   );
 }

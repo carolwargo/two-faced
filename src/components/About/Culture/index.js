@@ -1,4 +1,5 @@
 import React from 'react';
+import LogoIcon from "../../../assets/images/LogoIcon.png"
 
 export default function Culture() {
 return(
@@ -8,7 +9,9 @@ return(
     <br></br>
     <h5><strong>STANDARDS SET:</strong></h5>
     <p>
-      At <strong> TWO-FACED</strong>, we believe in the power of collaboration and innovation.
+      At <span>   <img src={LogoIcon} alt='LogoIcon' 
+               style={{ width: '100px', height: 'auto', marginTop: '-1rem' }} 
+                 /></span>, we believe in the power of collaboration and innovation.
       We're driven by a passion for technology and design, and we're committed
       to leveraging these strengths to create solutions that drive real impact
       for our clients. Our belief in continuous learning and staying at the
@@ -30,7 +33,7 @@ return(
       find an environment that encourages experimentation and fosters
       creativity. We're not just colleagues; we're a community united by a
       shared love for technology. We celebrate achievements, both big and
-      small, and we're always ready to support one another. At <strong> TWO-FACED</strong>, we
+      small, and we're always ready to support one another. At <strong> <span></span></strong>, we
       don't just work together, we grow together. We believe that a strong
       team is the cornerstone of success, and we're committed to providing a
       space where every member can thrive. Our culture is not just about the
@@ -38,7 +41,7 @@ return(
     </p>
     <br></br>
     <h5><strong>OUR STRENTH IN DIVERSITY:</strong> </h5>
-    <p>At TWO-FACED, we believe that a diverse and inclusive workplace is the bedrock of innovation and progress. We're committed to creating an environment where every individual, regardless of background, identity, or perspective, feels valued and empowered to contribute their unique talents.
+    <p>At <span></span>, we believe that a diverse and inclusive workplace is the bedrock of innovation and progress. We're committed to creating an environment where every individual, regardless of background, identity, or perspective, feels valued and empowered to contribute their unique talents.
 
 We understand that diversity extends beyond race and gender, encompassing a wide range of experiences, abilities, and viewpoints. Our inclusive culture encourages open dialogue, mutual respect, and active listening. We actively seek out diverse perspectives, knowing that it's the key to unlocking creativity and driving forward-thinking solutions.
 

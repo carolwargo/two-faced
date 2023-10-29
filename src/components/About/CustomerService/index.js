@@ -1,4 +1,5 @@
 import React from 'react';
+import LogoIcon from "../../../assets/images/LogoIcon.png"
 
 export default function CustomerService() {
 return(
@@ -7,7 +8,9 @@ return(
     <h6>COMMITMENT TO EXCELLENCE</h6>
     <h1><strong>Customer Service</strong></h1>
 <br></br>
-    <p>At <strong> <strong> TWO-FACED</strong></strong>, we understand that exceptional customer service is the cornerstone of any successful partnership. Our commitment to providing unparalleled service begins with a deep understanding of our client's unique needs and aspirations. We prioritize clear communication, active listening, and a solutions-oriented approach to ensure we not only meet, but exceed expectations.
+    <p>At <span>   <img src={LogoIcon} alt='LogoIcon' 
+               style={{ width: '100px', height: 'auto', marginTop: '-1rem' }} 
+                 /></span>, we understand that exceptional customer service is the cornerstone of any successful partnership. Our commitment to providing unparalleled service begins with a deep understanding of our client's unique needs and aspirations. We prioritize clear communication, active listening, and a solutions-oriented approach to ensure we not only meet, but exceed expectations.
 
 We believe in being responsive and accessible, valuing your time and concerns as much as our own. Our dedicated team is always ready to go the extra mile, offering support and guidance at every step of our journey together. With a client-centric mindset, we aim to build long-lasting relationships founded on trust, reliability, and a shared vision for success.
 </p>
@@ -21,7 +24,9 @@ Our promise to you is one of unwavering dedication and relentless pursuit of exc
 
 We promise to be adaptable and flexible, understanding that your needs may evolve. We're here to listen, learn, and adjust our approach to ensure we're always aligned with your goals. Our promise is to be a reliable partner, delivering solutions that not only meet your requirements, but also surpass your expectations.
 
-With <strong> TWO-FACED</strong>, you're not just a client; you're a valued partner. Our promise is to be by your side, working tirelessly to turn your visions into reality and achieve success together.
+With <span>   <img src={LogoIcon} alt='LogoIcon' 
+               style={{ width: '100px', height: 'auto', marginTop: '-1rem' }} 
+                 /></span>, you're not just a client; you're a valued partner. Our promise is to be by your side, working tirelessly to turn your visions into reality and achieve success together.
     </p>
 </div>
 )

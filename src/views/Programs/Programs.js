@@ -1,15 +1,15 @@
 import React from "react";
 import { motion} from "framer-motion";
 
-const Test = () => {
+const Programs = () => {
     return (
-<motion.div
+        <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}>
-        
-            <h1>Test</h1>
+            <h1>Programs</h1>
         </motion.div>
     );
-}
-export default Test;
+};
+
+export default Programs;

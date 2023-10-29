@@ -1,0 +1,21 @@
+.my-carousel-container {
+    width: 50%;
+  
+  }
+  
+  .carousel-items {
+    display: flex;
+    transition: transform 0.5s;
+  }
+  
+  .carousel-item {
+    min-width: 50%;
+    flex: 0 0 auto;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .carousel-item.active {
+    
+  }
+  
