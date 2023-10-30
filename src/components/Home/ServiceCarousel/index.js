@@ -12,7 +12,7 @@ function MyCarousel() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % 4);
-    }, 2000); // Change slide every 2 seconds
+    }, 3000); // Change slide every 2 seconds
 
     return () => clearInterval(interval);
   }, []);

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom';
 import {Row,Col} from "react-bootstrap";
 import { motion } from "framer-motion";
 import Card from 'react-bootstrap/Card';
@@ -8,15 +8,19 @@ import Dev from "../../../assets/images/Dev.png";
 import Design from "../../../assets/images/Design.png";
 import GraphicDesign from "../../../assets/images/GraphicDesign.png";
 import Marketing from "../../../assets/images/Marketing.png";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 export default function intro() {
   return (
-    <div>
+    <div
+    >
       <Container>
     <Row className="d-flex justify-content-center">
-      <Col>
+      <Col md={3}>
       <motion.div whileHover={{ scale: .95 }} whileTap={{ scale: 0.9 }}>
+      <Link to="/services#webDesign"></Link>
       <Card>
       <Card.Body>
       <Card.Title className="text-center">Dynamic Web Design</Card.Title>
@@ -26,7 +30,7 @@ export default function intro() {
       </motion.div>
       </Col>
 
-      <Col>
+      <Col md={3}>
     <motion.div whileHover={{ scale: .95 }} whileTap={{ scale: 0.9 }}>
       <Card>
         <Card.Img variant="top" src={Dev} />
@@ -37,7 +41,7 @@ export default function intro() {
       </motion.div>
       </Col>
 
-      <Col>
+      <Col md={3}>
       <motion.div whileHover={{ scale: .95 }} whileTap={{ scale: 0.9 }}>
       <Card>
         <Card.Img variant="top" src={Marketing} />
@@ -47,8 +51,8 @@ export default function intro() {
       </Card>
       </motion.div>
       </Col>
-      <Col>
-    
+      
+      <Col md={3}>
     <motion.div whileHover={{ scale: .95 }} whileTap={{ scale: 0.9 }}>
       <Card>
       <Card.Body>
@@ -59,6 +63,7 @@ export default function intro() {
       </motion.div>
       </Col>
      
+      
       </Row>
       </Container>
     </div>

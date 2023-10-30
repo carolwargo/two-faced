@@ -5,18 +5,24 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/index";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import "./App.css";
+
 import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App"
+    >
         
     <Router>
     <Navbar />
- 
+ <div  style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+      >
     <AnimatedRoutes />
-   
+    </div>
     <Footer />
     </Router>
     </div>

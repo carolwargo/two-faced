@@ -16,7 +16,7 @@ export default function Header() {
 <Row className='p-3'>
         <Col xs={5}>
         <p>CREATE A BRIGHTER FUTURE FOR YOUR BUSINESS</p>
-        <h2>State Your <br></br>Drive Growth and Sustainability</h2>
+        <h2>State Your <span style={{fontFamily:'Great Vibes', color:'#7B014C', fontSize:'4rem'}}>Vision</span></h2>
           </Col>
           <Col>
           <div>
@@ -63,7 +63,7 @@ export default function Header() {
               <h1 className='mb-3'
                 style={{textShadow: '1px 2px #000000'}}
               ><b>THINK OF THE POSSIBILITIES...</b></h1>
-              <h4 className='mb-3'>We can help you get there!
+              <h4 style={{color:'#D690AA'}} className='mb-3'>We can help you get there!
             </h4>
             
               <MDBBtn tag="a" size="lg">

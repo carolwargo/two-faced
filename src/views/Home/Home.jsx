@@ -17,6 +17,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import MeCard from "../../assets/images/MeCard.png";
 import LogoIcon from "../../assets/images/LogoIcon.png";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export default function Home() {
   return (
@@ -93,7 +95,7 @@ export default function Home() {
         alleviate any confusion.
       </p>
 
-      <h4>
+      <h4 style={{color:'#D690AA'}}>
         <strong>Our Services Include</strong>{" "}
         <span style={{ font: "caption", color: "gray" }}>
           but are not limited too...
@@ -103,7 +105,9 @@ export default function Home() {
       <br></br>
 
       <br></br>
+      <Row>
       <CoreIntro />
+      </Row>
       <br></br>
       <br></br>
       

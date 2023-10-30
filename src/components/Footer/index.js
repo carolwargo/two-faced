@@ -4,19 +4,19 @@ import LogoIcon from "../../assets/images/LogoIcon.png"
 
 export default function Footer() {
     return(
-<div className='bg-dark text-white'>
+<div>
 
 {/* Footer */}
-<footer className="text-center text-lg-start bg-light text-muted">
-  {/* Section: Social media */}
+<footer className="text-center text-lg-start bg-light text-muted border-top mt-5">
+  {/* Section: Social media 
   <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    {/* Left */}
+    {/* Left
     <div className="me-5 d-none d-lg-block">
       <span>Get connected with us on social networks:</span>
     </div>
-    {/* Left */}
+    
 
-    {/* Right */}
+    Right 
     <div>
       <a href="https//:github@carolwargo.com" className="me-4 text-reset">
         <i className="fab fa-facebook-f"></i>
@@ -37,9 +37,9 @@ export default function Footer() {
         <i className="fab fa-github"></i>
       </a>
     </div>
-    {/* Right */}
+ 
   </section>
-  {/* Section: Social media */}
+  Section: Social media */}
 
   {/* Section: Links  */}
   <section className="">

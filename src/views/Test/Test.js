@@ -1,6 +1,8 @@
 import React from "react";
 import { motion} from "framer-motion";
 
+
+
 const Test = () => {
     return (
 <motion.div
@@ -9,6 +11,7 @@ const Test = () => {
       exit={{ opacity: 0 }}>
         
             <h1>Test</h1>
+            
         </motion.div>
     );
 }
