@@ -20,13 +20,14 @@ export default function intro() {
     <Row className="d-flex justify-content-center">
       <Col md={3}>
       <motion.div whileHover={{ scale: .95 }} whileTap={{ scale: 0.9 }}>
-      <Link to="/services#webDesign"></Link>
+       <Link to="/services#webDesign">
       <Card>
       <Card.Body>
       <Card.Title className="text-center">Dynamic Web Design</Card.Title>
         </Card.Body>
         <Card.Img variant="top" src={Design} />
       </Card>
+      </Link> 
       </motion.div>
       </Col>
 
