@@ -12,7 +12,7 @@ const SocialMedia = () => {
         <div>
 
       <br></br>
-      <Container className="social-media">
+      <Container className="social-media" id="socialMedia">
         <h3>
         <b>
           SOCIAL MEDIA</b>

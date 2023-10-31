@@ -11,7 +11,7 @@ const MobileApp = () => {
     >
         <div>
       <br></br>
-      <Container className="mobile-app">
+      <Container className="mobile-app" id="mobileApp">
         <h3>
         <b>
           CUSTOM MOBILE APPLICATIONS</b>

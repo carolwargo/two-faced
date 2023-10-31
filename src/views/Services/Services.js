@@ -1,6 +1,6 @@
 import React from "react";
 
-import { motion} from "framer-motion";
+import {motion} from "framer-motion";
 import DevelopmentServices from "../../components/Services/Development/DevelopmentServices"
 import WebDesign from "../../components/Services/CoreServices/WebDesign/index";
 import SoftwareDev from "../../components/Services/CoreServices/SoftwareDev/index";
@@ -27,6 +27,9 @@ export default function Services () {
         <div>
         <Container>
 <DevelopmentServices/>
+
+
+
 </Container>
 <br></br>
 <br></br>

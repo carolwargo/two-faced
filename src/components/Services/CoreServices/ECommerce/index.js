@@ -11,7 +11,7 @@ const Ecommerce = () => {
     >
         <div>
       <br></br>
-      <Container className="ecommerce">
+      <Container className="ecommerce" id="ecommerce">
         <h3>
         <b>
           E-COMMERCE</b>

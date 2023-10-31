@@ -117,7 +117,7 @@ const WebDesign = () => {
         <br></br>
       <br></br>
       <br></br>
-      <Container className="web-design">
+      <Container className="web-design" id="webDesign">
         <h3>
         <b>
           DYNAMIC WEB DESIGN</b>

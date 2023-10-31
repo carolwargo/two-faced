@@ -11,7 +11,7 @@ const GraphicDesign = () => {
     >
         <div>
       <br></br>
-      <Container className="graphic-design">
+      <Container className="graphic-design"  id="graphicDesign"> 
         <h3>
         <b>
           GRAPHIC DESIGN</b>

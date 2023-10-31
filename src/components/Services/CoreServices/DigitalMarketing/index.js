@@ -11,7 +11,7 @@ const DigitalMarketing = () => {
     >
         <div>
       <br></br>
-      <Container className="digital-marketing">
+      <Container className="digital-marketing" id="digitalMarketing">
         <h3>
         <b>
           DIGITAL MARKETING</b>
