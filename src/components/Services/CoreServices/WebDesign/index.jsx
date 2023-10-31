@@ -24,7 +24,7 @@ const WebDesign = () => {
         <div>
        <Container>
         <Row>
-       <Col className="web-design" id="/test#web-design">
+       <Col className="web-design">
             <motion.div whileHover={{ scale: 0.95 }}>
               <MDBCard>
                 <MDBRipple
@@ -120,7 +120,7 @@ const WebDesign = () => {
       <Container className="web-design">
         <h3>
         <b>
-          DYNAMIC WEB DESIGN:</b>
+          DYNAMIC WEB DESIGN</b>
       </h3>
       <h5> CREATING INTERACTIVE AND USER-FRIENDLY WEBSITES
         </h5>

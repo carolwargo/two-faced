@@ -16,6 +16,7 @@ import ServiceCarousel from '../../components/Home/ServiceCarousel/index'
 import { Col, Container, Row } from "react-bootstrap";
 import MeCard from "../../assets/images/MeCard.png";
 import LogoIcon from "../../assets/images/LogoIcon.png";
+import Need from "../../assets/images/Need.png";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -82,9 +83,40 @@ export default function Home() {
         <Col></Col>
       </Row>
       <br></br>
-      <h1>
-        <strong>Where We Start</strong>
+
+      <Container>
+     
+
+<Row className="dflex">
+<Col md={7}>
+<h1>
+        <strong>Where Do We Start?</strong>
       </h1>
+      <h5>We Start with Eliminating Any Doubt Concerning "Need" By <br></br>Addressing Two Fundamental Questions Frequently Asked by Business Owners... </h5>
+        
+        <ol>
+          <li><i>Does My Business Really Need a Website?</i></li>
+          <li><i>Why Do I Need a Professional to Develop a Website?</i></li>
+        </ol>
+  <h5><i> <u> "Does My Business Really Need a Website?"</u> </i></h5>
+  <Container>
+  <p>YES, Every Business Needs A Website...</p>
+  </Container>
+  <h5><i><u>"Why Do I Need a Professional to Develop My Site?"</u> </i> </h5>
+  <Container>
+  <p>Technically You Can Do It Yourself <b>But</b>...</p>
+
+  </Container>
+  </Col>
+ 
+  <Col md={5} className="bg-dark text-white align-items-end justify-content-end">
+  <img src={Need} alt="website-need-visual" style={{ width: '100%' }} />
+</Col>
+
+</Row>
+      </Container>
+      <br></br>
+      <br></br>
       <p>"LET US ASSIST YOU IN DEFINING YOUR NEEDS"</p>
       <p>
         We understand that gaining clarity is a significant step towards finding
@@ -103,7 +135,6 @@ export default function Home() {
       </h4>
       
       <br></br>
-
       <br></br>
       <Row>
       <CoreIntro />

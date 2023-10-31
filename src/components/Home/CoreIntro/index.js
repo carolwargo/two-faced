@@ -33,38 +33,43 @@ export default function intro() {
 
       <Col md={3}>
     <motion.div whileHover={{ scale: .95 }} whileTap={{ scale: 0.9 }}>
+    <Link to="/services#softwareDev">
       <Card>
         <Card.Img variant="top" src={Dev} />
         <Card.Body>
           <Card.Title className="text-center">Software Solutions</Card.Title>
         </Card.Body>
       </Card>
+      </Link>
       </motion.div>
       </Col>
 
       <Col md={3}>
       <motion.div whileHover={{ scale: .95 }} whileTap={{ scale: 0.9 }}>
+      <Link to="/services#digitalMarketing">
       <Card>
         <Card.Img variant="top" src={Marketing} />
         <Card.Body>
         <Card.Title className="text-center">Digital Marketing</Card.Title>
         </Card.Body>
       </Card>
+      </Link>
       </motion.div>
       </Col>
       
       <Col md={3}>
     <motion.div whileHover={{ scale: .95 }} whileTap={{ scale: 0.9 }}>
+    <Link to="/services#graphicDesign">
       <Card>
       <Card.Body>
       <Card.Title className="text-center">Graphic Design</Card.Title>
         </Card.Body>
         <Card.Img variant="top" src={GraphicDesign} />
       </Card>
+      </Link>
       </motion.div>
       </Col>
-     
-      
+     {/*ADD ADDITIONAL CARDS ecommerce, socialMedia, mobileApp */}
       </Row>
       </Container>
     </div>

@@ -36,6 +36,7 @@ export default function intro() {
         </Col>
         <Col>
           <motion.div whileHover={{ scale: 0.95 }}>
+          <Link to="/software-dev#softwareDev">
             <MDBBtn
               rippleColor="light"
               color="white"
@@ -45,6 +46,7 @@ export default function intro() {
                 <strong>SOFTWARE DEVELOPMENT</strong>
               </h1>
             </MDBBtn>
+            </Link>
           </motion.div>
         </Col>
       </Row>
