@@ -62,9 +62,6 @@ export default function Nav() {
               <MDBNavbarItem>
                 <MDBNavbarLink className='bg-white' href='/contact'>Contact</MDBNavbarLink>
               </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink className='bg-white' href='/test'>Test</MDBNavbarLink>
-              </MDBNavbarItem>
             </MDBNavbarNav>
             <span className='navbar-text bg-white'> </span>
           </MDBCollapse>
