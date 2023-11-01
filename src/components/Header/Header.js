@@ -1,10 +1,9 @@
 import React from 'react';
-import LogoIcon from "../../assets/images/LogoIcon.png"
 import {
   MDBBtn
 } from 'mdb-react-ui-kit';
 
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import Cover from "../../assets/images/Cover.png"
 
 export default function Header() {
@@ -12,34 +11,16 @@ export default function Header() {
   return (
     <header>
       <div className='pt-4'>
-        
+      <Container>
 <Row className='p-3'>
-        <Col xs={5}>
-        <p>CREATE A BRIGHTER FUTURE FOR YOUR BUSINESS</p>
-        <h2>State Your <span style={{fontFamily:'Great Vibes', color:'#7B014C', fontSize:'4rem'}}>Vision</span></h2>
+ 
+        <Col xs={6}>
+        <p >CREATE A BRIGHTER FUTURE FOR YOUR BUSINESS</p>
+        <h3 style={{fontFamily:'Great Vibes', color:'#7B014C', fontSize:'3rem'}}>STATE YOUR VISION</h3>
           </Col>
-          <Col>
-          <div>
-        <p>
-          In today's dynamic market, businesses need more than just survival
-          tactics – they need strategies that drive growth and sustainability.
-          At {" "}
-          <span>
-            {" "}
-            <img
-              src={LogoIcon}
-              alt="LogoIcon"
-              style={{ width: "100px", height: "auto", marginTop: "-1rem" }}
-            />
-          </span>
-           , we are committed to helping you add value to your operations. Our
-          tailored solutions are designed to streamline your organization,
-          eliminate redundancies, and increase your market presence.
-        </p>
-      </div>
-          </Col>
+      
 </Row>
-
+</Container>
       </div>
       <div
         className='p-5 text-center bg-image position-relative' // Add position-relative
@@ -61,13 +42,13 @@ export default function Header() {
           <div className='d-flex justify-content-center align-items-center h-100'>
             <div className='text-white'>
               <h1 className='mb-3'
-                style={{textShadow: '1px 2px #000000'}}
+                style={{textShadow: '1px 2px #000000',fontFamily:'Great Vibes', color:'white', fontSize:'3rem'}}
               ><b>THINK OF THE POSSIBILITIES...</b></h1>
               <h4 style={{color:'#D690AA'}} className='mb-3'>We can help you get there!
             </h4>
             
               <MDBBtn tag="a" size="lg">
-                Call to action
+                <a href="#start" style={{color:'white'}}>Learn More</a>
               </MDBBtn>
             </div>
           </div>

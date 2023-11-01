@@ -1,6 +1,6 @@
-
 import React from "react";
 import MeCard from "../../../../assets/images/MeCard.png";
+import DoDont from "../../../../assets/images/DoDont.png";
 
 import { Container, Row, Col } from "react-bootstrap";
 import {
@@ -22,7 +22,31 @@ const WebDesign = () => {
       exit={{ opacity: 0 }}
     >
         <div>
-       <Container>
+ 
+      <br></br>
+      <Container className="web-design" id="webDesign">
+        <h3>
+        <b>
+          DYNAMIC WEB DESIGN</b>
+      </h3>
+      <h5> CREATING INTERACTIVE AND USER-FRIENDLY WEBSITES
+        </h5>
+        <p>
+        Dynamic web design is a crucial aspect of modern web development,
+        allowing websites to go beyond static content and provide a more
+        immersive user experience. Unlike static websites, which display fixed
+        content to all users, dynamic websites adapt and respond to user
+        interactions, making them more engaging and user-friendly.
+        
+      </p>
+        <p>Now to clarify, "DYNAMIC" does not mean "<s>COMPLICATED</s>!"</p>
+        <p>Opinions are formed based on clarity</p>
+        <p>If you implement the above, not only will life be easier in a few respects but, it will give the appearance your business just blew up (in a good way). Like the bigger, the better- Size does matter- If you got it, flaunt it- Big, fat, girthy growth. 🤭 Ok when I say “just blew up”, site will take time to revamp but… in the scheme of the business world, I’m talking short turn around.</p>
+        <br></br>
+     <img src={DoDont} alt="DoDont" style={{ width: "100%", height: "auto" }} />
+      <br></br>
+      
+      <Container>
         <Row>
        <Col className="web-design">
             <motion.div whileHover={{ scale: 0.95 }}>
@@ -112,27 +136,7 @@ const WebDesign = () => {
           </Col>
         </Row>
         </Container>
-
-
         <br></br>
-      <br></br>
-      <br></br>
-      <Container className="web-design" id="webDesign">
-        <h3>
-        <b>
-          DYNAMIC WEB DESIGN</b>
-      </h3>
-      <h5> CREATING INTERACTIVE AND USER-FRIENDLY WEBSITES
-        </h5>
-      <p>
-        Dynamic web design is a crucial aspect of modern web development,
-        allowing websites to go beyond static content and provide a more
-        immersive user experience. Unlike static websites, which display fixed
-        content to all users, dynamic websites adapt and respond to user
-        interactions, making them more engaging and user-friendly.
-        
-      </p>
-      <br></br>
       <Row>
         <Col xs={6}>
       <h5><b><u>KEY COMPONENTS OF DYNAMIC WEB DESIGN:</u></b></h5>

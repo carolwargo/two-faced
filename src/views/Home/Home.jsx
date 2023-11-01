@@ -16,7 +16,9 @@ import ServiceCarousel from '../../components/Home/ServiceCarousel/index'
 import { Col, Container, Row } from "react-bootstrap";
 import MeCard from "../../assets/images/MeCard.png";
 import LogoIcon from "../../assets/images/LogoIcon.png";
-import Need from "../../assets/images/Need.png";
+import Facts1 from "../../assets/images/Facts1.png";
+import Facts2 from "../../assets/images/Facts2.png";
+import Facts3 from "../../assets/images/Facts3.png";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -28,7 +30,9 @@ export default function Home() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       >
+        
     <div className="home-page" id="home-page">
+        
         <Header />
         <Container>
       <div className="text-center">
@@ -55,10 +59,10 @@ export default function Home() {
       </div>
       <br></br>
       <Row>
-        <Col>
+       
           <h1>
             <strong>
-              We Are{" "}
+           {" "}
               <span>
                 {" "}
                 <img
@@ -79,42 +83,90 @@ export default function Home() {
             </i>
           </p>
           <br></br>
-        </Col>
-        <Col></Col>
+      
       </Row>
       <br></br>
 
       <Container>
      
 
-<Row className="dflex">
-<Col md={7}>
-<h1>
-        <strong>Where Do We Start?</strong>
-      </h1>
-      <h5>We Start with Eliminating Any Doubt Concerning "Need" By <br></br>Addressing Two Fundamental Questions Frequently Asked by Business Owners... </h5>
-        
-        <ol>
+<Row className="dflex justify-content-between">
+<Col md={5}>
+<h2 className="start" id="start" style={{color:'#7B014C'}}>
+        <strong>WHERE DO WE START?</strong>
+      </h2>
+      <h5>Three Things To Be Explained</h5>
+      <ol>
+        <li>DEFINE A WELL DEVELOPED SITE</li>
+        <li>ELIMINATE DOUBT</li>
+        <li>ASSIST WITH NEED</li>
+      </ol>
+      <br></br>
+      <p>1. "<u>DEFINING A WELL DEVELOPED WEBSITE</u>"</p>
+      <p style={{color:"gray"}} >Efficiency-<i>"Making the most of our time & resources"</i> is crucial in any type of success, right?
+A website is no different- An “EFFICIENT” site will allow you to “make the most of your time & resources”. A well developed website will quite literally replace administrative need, eliminate repetition, keep you organized, conduct analysis, and generate “passive income”. Sound too good to be true? <b>IT'S NOT</b>!
+<span> <a href= "/web-design">See How</a>...</span>
+</p>
+<br></br>
+      <p>"ELIMINATING DOUBT FOR NEED OF IT SERVICES"</p>
+      <p>By Addressing Two Frequently Asked Questions By Business Owners. </p> 
+      <Container className="pt-3">
+       <ol>
           <li><i>Does My Business Really Need a Website?</i></li>
+          <p><b>YES</b>, Every Business Needs A Website.</p>
           <li><i>Why Do I Need a Professional to Develop a Website?</i></li>
+          <p>Technically You Can Do It Yourself <b>But</b>...</p>
         </ol>
-  <h5><i> <u> "Does My Business Really Need a Website?"</u> </i></h5>
-  <Container>
-  <p>YES, Every Business Needs A Website...</p>
-  </Container>
-  <h5><i><u>"Why Do I Need a Professional to Develop My Site?"</u> </i> </h5>
-  <Container>
-  <p>Technically You Can Do It Yourself <b>But</b>...</p>
+        
+        <p>"LET US ASSIST YOU IN DEFINING YOUR NEEDS"</p>
+      <p>
+        We understand that gaining clarity is a significant step towards finding
+        the right solution, and We further acknowledge that narrowing down your
+        requirements can be a daunting task. Our expertise lies in translating
+        everyday concepts into sophisticated solutions. To simplify this
+        process, we've created an easy-to-follow selection guide to help
+        alleviate any confusion.
+      </p>
 
-  </Container>
+      <h4 style={{color:'#D690AA'}}>
+        <strong>Our Services Include</strong>{" "}
+        <span style={{ font: "caption", color: "gray" }}>
+          but are not limited too...
+        </span>
+      </h4>
+      
+        </Container>
   </Col>
- 
-  <Col md={5} className="bg-dark text-white align-items-end justify-content-end">
-  <img src={Need} alt="website-need-visual" style={{ width: '100%' }} />
+  <Col md={6} className="align-items-end justify-content-end">
+  <motion.div
+    className="box"
+    whileHover={{ scale: 1.1 }}
+    transition={{ type: "spring", stiffness: 400, damping: 20 }}
+  />
+  <motion.div
+    whileHover={{ scale: 1.1 }}
+    transition={{ type: "spring", stiffness: 400, damping: 20 }}
+  >
+    <img src={Facts1} alt="fact-pic1" style={{ width: '100%', padding:"1rem" }} />
+  </motion.div>
+  <motion.div
+    whileHover={{ scale: 1.1 }}
+    transition={{ type: "spring", stiffness: 400, damping: 20 }}
+  >
+    <img src={Facts2} alt="fact-pic2" style={{ width: '100%' , padding:"1rem"}} />
+  </motion.div>
+  <motion.div
+    whileHover={{ scale: 1.1 }}
+    transition={{ type: "spring", stiffness: 400, damping: 20}}
+  >
+    <img src={Facts3} alt= "fact-pic3" style={{ width: '100%', padding:"1rem" }}></img>
+  </motion.div>
 </Col>
+
 
 </Row>
       </Container>
+
       <br></br>
       <br></br>
       <p>"LET US ASSIST YOU IN DEFINING YOUR NEEDS"</p>

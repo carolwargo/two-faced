@@ -7,7 +7,6 @@ import Consulting from "../views/Consulting/Consulting";
 import Programs from "../views/Programs/Programs";
 import Contact from "../views/Contact/Contact";
 
-
 import WebDesign from "./Services/CoreServices/WebDesign/index";
 import SoftwareDev from "./Services/CoreServices/SoftwareDev/index";
 import DigitalMarketing from "./Services/CoreServices/DigitalMarketing/index";
@@ -17,6 +16,7 @@ import GraphicDesign from "./Services/CoreServices/GraphicDesign/index";
 import MobileApp from "./Services/CoreServices/MobileApp/index";
 
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {AnimatePresence} from "framer-motion"
 function AnimatedRoutes(){
     const location = useLocation(); 
@@ -42,6 +42,8 @@ function AnimatedRoutes(){
         <Route path="/ecommerce" element={<Ecommerce />} />
         <Route path="/social-media" element={<SocialMedia />} />
         <Route path="/mobile-app" element={<MobileApp />} />
+       
+       
   
       </Routes>
 

@@ -1,100 +1,56 @@
-import React from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import "./style.css";
+import "bootstrap/dist/css/bootstrap.min.css"
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
-import {motion} from "framer-motion";
-import DevelopmentServices from "../../components/Services/Development/DevelopmentServices"
-import WebDesign from "../../components/Services/CoreServices/WebDesign/index";
-import SoftwareDev from "../../components/Services/CoreServices/SoftwareDev/index";
-import DigitalMarketing from "../../components/Services/CoreServices/DigitalMarketing/index";
-import Ecommerce from "../../components/Services/CoreServices/ECommerce";
-import SocialMedia from "../../components/Services/CoreServices/SocialMedia";
-import GraphicDesign from "../../components/Services/CoreServices/GraphicDesign";
+export default function Services() {
+  const services = [
+    "Web Design",
+    "Software Development Solutions",
+    "Digital Marketing",
+    "Graphic Design",
+    "E-Commerce Solutions",
+    "Social Media",
+    "Mobile App"
+  ];
 
+  const [selected, setSelected] = useState("Choose One");
+  const [isActive, setIsActive] = useState(false);
 
-import { Container } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import MobileApp from "../../components/Services/CoreServices/MobileApp";
-
-
-
-export default function Services () {
-    return (
-
-        <motion.div
+  return (
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-     >
-        <div>
-        <Container>
-<DevelopmentServices/>
-
-
-
-</Container>
-<br></br>
-<br></br>
-
-<Container> 
-<div id="webDesign">  
-<WebDesign/>
-</div>
-</Container>
-<br></br>
-<br></br>
-
-<Container>
-<div id="softwareDev">  
-<SoftwareDev/>
-</div>
-</Container>    
-<br></br>
-<br></br>
-
-<Container>
-<div id="graphicDesign">  
-<GraphicDesign/>
-</div>
-</Container>    
-<br></br>
-<br></br>
-
-
-<Container>
-<div id="digitalMarketing">  
-<DigitalMarketing/>
-</div>
-</Container>    
-<br></br>
-<br></br>
-
-
-<Container>
-<div id="ecommerce">  
-<Ecommerce/>
-</div>
-</Container>    
-<br></br>
-<br></br>
-
-<Container>
-<div id="socialMedia">  
-<SocialMedia/>
-</div>
-</Container>    
-<br></br>
-<br></br>
-
-<Container>
-<div id="mobileApp">  
-<MobileApp/>
-</div>
-</Container>    
-<br></br>
-<br></br>
-
-</div>
-
-        </motion.div>
-
-    )
+    >
+      <div className="dropdown">
+      <div className="dropdown-btn" onClick={() => setIsActive(!isActive)}>
+          {selected || "Choose One"} {/* Display selected or "Choose One" */}
+          <span><i className="fa fa-caret-down" aria-hidden="true"></i></span>        
+        </div>
+        
+        {isActive && (
+          <div className="dropdown-content">
+            {services.map((service, index) => (
+              <div className="dropdown-item" key={index}>
+                <Link to={`/${service.toLowerCase().replace(/ /g, "-")}`}>
+                <div
+                    onClick={() => {
+                      setSelected(service);
+                      setIsActive(false);
+                    }}
+                    className="dropdown-item"
+                  >
+                    {service}
+                  </div>
+                </Link>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </motion.div>
+  );
 }
