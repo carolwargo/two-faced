@@ -14,7 +14,7 @@ const WebDesign = () => {
       id="web-design"
     >
        <Container>
-      <h1>
+      <h1  style={{fontFamily:'Great Vibes', color:'#BF6A6A'}}>
         <b>
           DYNAMIC WEB DESIGN:</b>
       </h1>

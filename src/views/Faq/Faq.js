@@ -4,8 +4,8 @@ export  default function FAQ() {
 
     return(
         <div>
-            <h1>FAQ</h1>
-            <h2>Source</h2>
+            <h1  style={{fontFamily:'Great Vibes',color:'#BF6A6A'}}>FAQ</h1>
+            <h2 style={{color:'#444950'}}>Source</h2>
             <ul>
             <li><a href="https://socpub.com/articles/the-5-mobile-marketing-mistakes-infographic-14849">SOCSUB</a></li>
             <li> <a href="http://credibility.stanford.edu/guidelines/index.html"> Web Credibility Research Stanford</a></li>

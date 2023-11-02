@@ -3,7 +3,7 @@ import {
   MDBBtn
 } from 'mdb-react-ui-kit';
 
-import { Row, Col, Container } from "react-bootstrap";
+import {  Container } from "react-bootstrap";
 import Cover from "../../assets/images/Cover.png"
 
 export default function Header() {
@@ -12,14 +12,7 @@ export default function Header() {
     <header>
       <div className='pt-4'>
       <Container>
-<Row className='p-3'>
- 
-        <Col xs={6}>
-        <p >CREATE A BRIGHTER FUTURE FOR YOUR BUSINESS</p>
-        <h3 style={{fontFamily:'Great Vibes', color:'#7B014C', fontSize:'3rem'}}>STATE YOUR VISION</h3>
-          </Col>
-      
-</Row>
+
 </Container>
       </div>
       <div
@@ -44,7 +37,7 @@ export default function Header() {
               <h1 className='mb-3'
                 style={{textShadow: '1px 2px #000000',fontFamily:'Great Vibes', color:'white', fontSize:'3rem'}}
               ><b>THINK OF THE POSSIBILITIES...</b></h1>
-              <h4 style={{color:'#D690AA'}} className='mb-3'>We can help you get there!
+              <h4 style={{color:'white'}} className='mb-3'>We can help you get there!
             </h4>
             
               <MDBBtn tag="a" size="lg">

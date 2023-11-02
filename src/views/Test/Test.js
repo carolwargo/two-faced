@@ -10,7 +10,7 @@ const Test = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}>
         
-            <h1>Test</h1>
+            <h1  style={{fontFamily:'Great Vibes', color:'#BF6A6A'}}>Test</h1>
             
         </motion.div>
     );

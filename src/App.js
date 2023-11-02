@@ -15,14 +15,9 @@ function App() {
         
     <Router>
     <Navbar />
- <div  style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-      >
+
     <AnimatedRoutes />
-    </div>
+
     <Footer />
     </Router>
     </div>

@@ -5,7 +5,7 @@ export default function Culture() {
 return(
     <div>
     <h6>WHAT WE BELIEVE</h6>
-    <h1><strong>Culture</strong></h1>
+    <h1 style={{fontFamily:'Great Vibes', color:'#BF6A6A'}}><strong>Culture</strong></h1>
     <br></br>
     <h5><strong>STANDARDS SET:</strong></h5>
     <p>

@@ -6,7 +6,7 @@ return(
 <div>
     
     <h6>COMMITMENT TO EXCELLENCE</h6>
-    <h1><strong>Customer Service</strong></h1>
+    <h1  style={{fontFamily:'Great Vibes', color:'#BF6A6A',}}><strong>Customer Service</strong></h1>
 <br></br>
     <p>At <span>   <img src={LogoIcon} alt='LogoIcon' 
                style={{ width: '100px', height: 'auto', marginTop: '-1rem' }} 

@@ -7,7 +7,7 @@ const Programs = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}>
-            <h1>Programs</h1>
+            <h1  style={{fontFamily:'Great Vibes', color:'#BF6A6A'}}>Programs</h1>
         </motion.div>
     );
 };

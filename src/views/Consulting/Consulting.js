@@ -8,7 +8,7 @@ export default function Consulting () {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}>
-            <h1>Consulting</h1>
+            <h1  style={{fontFamily:'Great Vibes', color:'#BF6A6A'}}>Consulting</h1>
         </motion.div>
     )
 }

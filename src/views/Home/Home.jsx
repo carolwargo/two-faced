@@ -12,7 +12,7 @@ import {
 
 import Header from "../../components/Header/Header";
 import CoreIntro from "../../components/Home/CoreIntro/index";
-import ServiceCarousel from '../../components/Home/ServiceCarousel/index'
+
 import { Col, Container, Row } from "react-bootstrap";
 import MeCard from "../../assets/images/MeCard.png";
 import LogoIcon from "../../assets/images/LogoIcon.png";
@@ -25,20 +25,23 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
   return (
+    <div className="p-2" >
         <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       >
-        
+          <Header />
     <div className="home-page" id="home-page">
         
-        <Header />
-        <Container>
-      <div className="text-center">
+      
+        
+      <Container className="text-center">
         <br></br>
-        <h2>
-          <b>UNLOCK THE FULL POTENTIAL OF YOUR BUSINESS...</b>
+        <br></br>
+        <Row>
+        <h2 >
+          <b style={{fontFamily:'Great Vibes', color:'#BF6A6A'}}>UNLOCK THE FULL POTENTIAL OF YOUR BUSINESS...</b>
         </h2>
         <p>
           In today's dynamic market, businesses need more than just survival
@@ -56,11 +59,99 @@ export default function Home() {
           tailored solutions are designed to streamline your organization,
           eliminate redundancies, and increase your market presence.
         </p>
-      </div>
+        </Row>
+      </Container>
       <br></br>
+      <br></br>
+      <Container>
       <Row>
-       
-          <h1>
+      <CoreIntro />
+      </Row>
+      <br></br>
+      <br></br>
+      <br></br>
+      </Container>
+      <div className="text-center bg-secondary-subtle p-4"
+      style={{boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)',padding:'1rem' }}>
+      <h1 style={{color:'gray', textShadow: '0 4px 8px rgba(0, 0, 0, 0.5)'}}>
+        TECHNOLOGY MADE SIMPLE
+        </h1>
+        <br></br>
+        <Row className="d-flex justify-content-between ">
+        <Col md={4} 
+            style={{padding:"1rem"}}>
+          <motion.div
+          className="box"
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 400, damping: 20 }}
+        >
+        <button className="services btn btn-secondary pt-3 pb-3"
+          style={{
+            fontSize: '1.25rem',
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)', // Example shadow: 0 offset, 4px blur, 8px spread, 10% opacity
+            textShadow: '0 4px 8px rgba(0, 0, 0, 0.5)',
+            backgroundColor:'#BF6A6A',
+            color:'white',
+            paddingRight:'1rem',
+            paddingLeft:'1rem'
+          }}
+          >
+            <b>CONSULTING SERVICES</b></button>
+            </motion.div>
+            </Col>
+            <Col md={4} 
+            style={{padding:"1rem"}}>
+            <motion.div
+    className="box"
+    whileHover={{ scale: 1.1 }}
+    transition={{ type: "spring", stiffness: 400, damping: 20 }}
+  >
+        <button className="services btn btn-secondary pt-3 pb-3 "
+           style={{
+            fontSize: '1.25rem',
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)', // Example shadow: 0 offset, 4px blur, 8px spread, 10% opacity
+            textShadow: '0 4px 8px rgba(0, 0, 0, 0.5)',
+            backgroundColor:'#BF6A6A',
+            color:'white',
+            paddingRight:'2rem',
+            paddingLeft:'2rem'
+        }}
+        >
+          <b>SUPPORT SERVICES</b></button>
+          </motion.div>
+          </Col>
+          <Col md={4}
+           style={{padding:"1rem"}}>
+          <motion.div
+    className="box"
+    whileHover={{ scale: 1.1 }}
+    transition={{ type: "spring", stiffness: 400, damping: 20 }}
+  >
+        <button className="services btn btn-secondary pt-3 pb-3"
+           style={{
+            fontSize: '1.25rem',
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)', // Example shadow: 0 offset, 4px blur, 8px spread, 10% opacity
+            textShadow: '0 4px 8px rgba(0, 0, 0, 0.5)',
+            backgroundColor:'#BF6A6A',
+            color:'white',
+            paddingRight:'1.75rem',
+            paddingLeft:'1.75rem'
+          }}
+          >
+            <b>TRAINING SERVICES</b></button>
+            </motion.div>
+            </Col>
+        </Row>
+
+        </div>
+
+        <br></br>
+        <br></br>
+        <br></br>
+        
+      <Container>
+      <Row>
+          <h1  style={{fontFamily:'Great Vibes', color:'#BF6A6A'}}>
             <strong>
            {" "}
               <span>
@@ -91,8 +182,8 @@ export default function Home() {
      
 
 <Row className="dflex justify-content-between">
-<Col md={5}>
-<h2 className="start" id="start" style={{color:'#7B014C'}}>
+<Col md={6}>
+<h2 className="start" id="start" style={{color:'#BF6A6A'}}>
         <strong>WHERE DO WE START?</strong>
       </h2>
       <h5>Three Things To Be Explained</h5>
@@ -127,8 +218,8 @@ A website is no different- An “EFFICIENT” site will allow you to “make the
         process, we've created an easy-to-follow selection guide to help
         alleviate any confusion.
       </p>
-
-      <h4 style={{color:'#D690AA'}}>
+      
+      <h4 style={{color:'#BF6A6A'}}>
         <strong>Our Services Include</strong>{" "}
         <span style={{ font: "caption", color: "gray" }}>
           but are not limited too...
@@ -147,19 +238,19 @@ A website is no different- An “EFFICIENT” site will allow you to “make the
     whileHover={{ scale: 1.1 }}
     transition={{ type: "spring", stiffness: 400, damping: 20 }}
   >
-    <img src={Facts1} alt="fact-pic1" style={{ width: '100%', padding:"1rem" }} />
+    <img src={Facts1} alt="fact-pic1" style={{ width: '100%', padding:'1rem'}} />
   </motion.div>
   <motion.div
     whileHover={{ scale: 1.1 }}
     transition={{ type: "spring", stiffness: 400, damping: 20 }}
   >
-    <img src={Facts2} alt="fact-pic2" style={{ width: '100%' , padding:"1rem"}} />
+    <img src={Facts2} alt="fact-pic2" style={{ width: '100%', padding:'1rem'}} />
   </motion.div>
   <motion.div
     whileHover={{ scale: 1.1 }}
     transition={{ type: "spring", stiffness: 400, damping: 20}}
   >
-    <img src={Facts3} alt= "fact-pic3" style={{ width: '100%', padding:"1rem" }}></img>
+    <img src={Facts3} alt= "fact-pic3" style={{ width: '100%', padding:'1rem'}}></img>
   </motion.div>
 </Col>
 
@@ -179,7 +270,7 @@ A website is no different- An “EFFICIENT” site will allow you to “make the
         alleviate any confusion.
       </p>
 
-      <h4 style={{color:'#D690AA'}}>
+      <h4 style={{color:'#BF6A6A'}}>
         <strong>Our Services Include</strong>{" "}
         <span style={{ font: "caption", color: "gray" }}>
           but are not limited too...
@@ -195,12 +286,7 @@ A website is no different- An “EFFICIENT” site will allow you to “make the
       <br></br>
       
       
-      <div className="text-center">
-      <h2>
-        <strong>Technology Made Simple</strong>
-        </h2>
-        <ServiceCarousel />
-        </div>
+    
         
       <br></br>
       <br></br>
@@ -237,5 +323,6 @@ A website is no different- An “EFFICIENT” site will allow you to “make the
       </Container>
     </div>
     </motion.div>
+    </div>
   );
 }

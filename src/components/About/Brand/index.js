@@ -5,10 +5,10 @@ export default function Brand() {
   return (
     <div>
       <h6>WHY <span>   <img src={LogoIcon} alt='LogoIcon'
-               style={{ width: '100px', height: 'auto', marginTop: '-1rem' }} 
+               style={{ width: '100px', height: 'auto', marginTop: '-1rem', boxShadow: "0 0 5px 5px rgba(0, 0, 0, 0.5)" }} 
                  /></span>
                  </h6>
-      <h1><strong>Our Brand</strong></h1>
+      <h1  style={{fontFamily:'Great Vibes',color:'#BF6A6A'}}><strong>Our Brand</strong></h1>
       <br></br>
       <h5><strong>THE ORIGIN OF OUR BRAND:</strong></h5>
       <p>

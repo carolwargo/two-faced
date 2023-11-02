@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+
+import Consult from "../../../assets/images/Consult.png"
+import Support from "../../../assets/images/Support.png"
+import Train from "../../../assets/images/Train.png"
 import "../ServiceCarousel/style.css"
 
 function MyCarousel() {
@@ -19,23 +23,24 @@ function MyCarousel() {
 
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item>
-        <h3>Contract Work</h3>
-        {/* Add your design content here */}
-      </Carousel.Item>
-      <Carousel.Item>
-        <h3>Consulting</h3>
-        {/* Add your consulting content here */}
-      </Carousel.Item>
-      <Carousel.Item>
-        <h3>Training</h3>
-        {/* Add your support content here */}
-      </Carousel.Item>
-      <Carousel.Item>
-        <h3>Support</h3>
-        {/* Add your support content here */}
-      </Carousel.Item>
-    </Carousel>
+  <Carousel.Item>
+    <img src={Support} alt='support-button' />
+    {/* Add your design content here */}
+  </Carousel.Item>
+  <Carousel.Item>
+    <img src={Consult} alt='consult-button' />
+    {/* Add your consulting content here */}
+  </Carousel.Item>
+  <Carousel.Item>
+    <img src={Train} alt='train-button' />
+    {/* Add your support content here */}
+  </Carousel.Item>
+  <Carousel.Item>
+   
+    {/* Add your support content here */}
+  </Carousel.Item>
+</Carousel>
+
   );
 }
 

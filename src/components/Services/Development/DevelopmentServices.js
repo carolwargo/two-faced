@@ -29,8 +29,8 @@ export default function DevServices() {
       }}
     >
       <div>
-      <h1>SERVICES</h1>
-        <h4 style={{color:'#D690AA'}}>
+      <h1  style={{fontFamily:'Great Vibes', color:'#BF6A6A'}}>SERVICES</h1>
+        <h4 style={{color:'#BF6A6A'}}>
           <strong>Core Services</strong>
         </h4>
 
@@ -63,7 +63,7 @@ export default function DevServices() {
 <br></br>
 
         <Row>
-          <h4 style={{color:'#D690AA'}}><b>Additional Services</b></h4>
+          <h4 style={{color:'#BF6A6A'}}><b>Additional Services</b></h4>
           <Col md={4} >
             <motion.div whileHover={{ scale: 0.95 }}>
               <MDBCard className="bg-secondary-subtle text-black text-md-center shadow-5-primary">
@@ -153,7 +153,7 @@ export default function DevServices() {
 
         <br></br>
         <Col>
-          <h4 style={{color:'#D690AA'}}>Development Services Description</h4>
+          <h4 style={{color:'#BF6A6A'}}>Development Services Description</h4>
           <p>Click The Desired Service Below To Learn More...</p>
         </Col>
         <Row className="development-services-items-row1 mb-4">

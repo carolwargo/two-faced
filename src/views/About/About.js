@@ -17,14 +17,15 @@ export default function About() {
       exit={{ opacity: 0 }}>
     
       <br></br>
-      <h1 style={{fontSize:"4rem"}}>WHO WE ARE</h1>
+      <Container>
+      <h1  style={{fontFamily:'Great Vibes', color:'#BF6A6A',fontSize:"4rem"}}>WHO WE ARE</h1>
       <br></br>
       <p>"YOUR PARTNER IN IT SUCCESS AND INNOVATION"</p>
-      <h1>
+     
         <strong><span>   <img src={LogoIcon} alt='LogoIcon' 
                style={{ width: '100px', height: 'auto', marginTop: '-1rem' }} 
                  /></span></strong>
-      </h1>
+      
       <p>
         "A Passionate Team Dedicated To Empowering Businesses Through harnessing
         the power of cutting-edge tools and frameworks to breathe life into
@@ -36,7 +37,7 @@ export default function About() {
       </p>
       <br></br>
       <p>"WHERE DEVELOPMENT MEETS DESIGN"</p>
-      <h1>
+      <h1  style={{fontFamily:'Great Vibes', color:'#BF6A6A'}}>
         <strong>What we do</strong>
       </h1>
       <p>
@@ -58,7 +59,7 @@ export default function About() {
 
       <CustomerService />
       <br></br>
-
+      </Container>
       <br></br>
       <motion.div whileHover={{ scale: 0.95 }}>
       <Container className="text-center bg-secondary-subtle p-4"
@@ -67,7 +68,7 @@ export default function About() {
                 }}
                 >
            <br></br>         
-        <h3>"Ready to Propel Your Business Forward?"</h3>
+        <h3 style={{color:'#BF6A6A'}}>"Ready to Propel Your Business Forward?"</h3>
       <MDBBtn color="secondary">CONTACT US</MDBBtn>
       </Container>
       </motion.div>

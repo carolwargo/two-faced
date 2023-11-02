@@ -7,7 +7,7 @@ const Contact = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}>
-            <h1>Contact</h1>
+            <h1  style={{fontFamily:'Great Vibes', color:'#BF6A6A'}}>Contact</h1>
         </motion.div>
     );
 };
