@@ -26,11 +26,11 @@ export default function intro() {
       <Card
          style={{boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)'}}
          >
+          <Card.Img variant="top" src={Design} />
       <Card.Body>
       <Card.Title className="text-center"
       style={{fontSize:'1rem'}}>Dynamic Web Design</Card.Title>
-        </Card.Body>
-        <Card.Img variant="top" src={Design} />
+        </Card.Body> 
       </Card>
       </Link> 
       </motion.div>
@@ -75,10 +75,10 @@ export default function intro() {
       <Card
          style={{boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)'}}
          >
+        <Card.Img variant="top" src={GraphicDesign} />
       <Card.Body>
       <Card.Title className="text-center" style={{fontSize:'1rem'}}>Graphic Design</Card.Title>
         </Card.Body>
-        <Card.Img variant="top" src={GraphicDesign} />
       </Card>
       </Link>
       </motion.div>
@@ -103,7 +103,7 @@ export default function intro() {
          >
         <Card.Img variant="top" src={Dev} />
         <Card.Body>
-          <Card.Title className="text-center" style={{fontSize:'1rem'}}>Software Solutions</Card.Title>
+          <Card.Title className="text-center" style={{fontSize:'1rem', textUnderlineOffset:"black"}}>Software Solutions</Card.Title>
         </Card.Body>
       </Card>
       </Link>
@@ -116,11 +116,11 @@ export default function intro() {
       <Card
          style={{boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)'}}
          >
+          <Card.Img variant="top" src={Design} />
       <Card.Body>
       <Card.Title className="text-center"
       style={{fontSize:'1rem', textDecoration:'none'}}>Dynamic Web Design</Card.Title>
         </Card.Body>
-        <Card.Img variant="top" src={Design} />
       </Card>
       </Link> 
       </motion.div>
@@ -133,10 +133,10 @@ export default function intro() {
       <Card
          style={{boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}
          >
+           <Card.Img variant="top" src={GraphicDesign} />
       <Card.Body>
       <Card.Title className="text-center" style={{fontSize:'1rem'}}>Graphic Design</Card.Title>
         </Card.Body>
-        <Card.Img variant="top" src={GraphicDesign} />
       </Card>
       </Link>
       </motion.div>

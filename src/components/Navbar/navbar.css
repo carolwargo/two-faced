@@ -1,0 +1,23 @@
+// Add this CSS file to your project and import it in your component
+// customNavbarStyles.css
+.navbar-nav {
+  display: flex !important;
+  align-items: center;
+}
+
+
+.dropdown-menu {
+    animation: fadeInDown 0.5s !important;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0 !important;
+      transform: translate3d(0, -10px, 0) !important;
+    }
+    to {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  }
+  

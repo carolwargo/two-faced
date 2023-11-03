@@ -45,7 +45,16 @@ const WebDesign = () => {
         <Row>
         <Col xs={6}>
         <p>Now to clarify, <b>"DYNAMIC"</b> does not mean "<s>COMPLICATED</s>!"</p>
-        <p>Opinions are formed based on clarity</p>
+        <h5>WEBSITE ANALYSIS</h5>
+        <p>
+     <b>Simple is good</b>-The goal is to make a website seem simple regardless of size, content, reach or capabilities. <br></br>
+     <b>Clear & Concise</b>
+     <ul>
+      <li>
+      “Niche” should be obvious.
+        </li>
+        </ul> 
+     </p>
         </Col>
           <Col xs={6}>
         <motion.div whileHover={{ scale: 0.95 }}>
