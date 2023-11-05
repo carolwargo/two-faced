@@ -3,6 +3,8 @@ import MeCard from "../../../../assets/images/MeCard.png";
 import DoDont from "../../../../assets/images/DoDont.png";
 import {motion} from "framer-motion";
 
+import Teal from "../../../../assets/images/Teal.png";
+
 import { Container, Row, Col } from "react-bootstrap";
 import {
   MDBCard,
@@ -20,6 +22,10 @@ const WebDesign = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
+      style={{ 
+        backgroundImage: `url(${Teal})`,
+     
+      }}
     >
         <div>
  
@@ -64,7 +70,6 @@ const WebDesign = () => {
      
      </Row>
       <br></br>
-      <p>If you implement the above, not only will life be easier in a few respects but, it will give the appearance your business just blew up (in a good way). Like the bigger, the better- Size does matter- If you got it, flaunt it- Big, fat, girthy growth. 🤭 Ok when I say “just blew up”, site will take time to revamp but… in the scheme of the business world, I’m talking short turn around.</p>
       <Container>
         <Row>
        <Col className="web-design">
