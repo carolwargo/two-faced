@@ -9,8 +9,7 @@ import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
   return (
-    <div className="App"
-    >
+    <div className="App">
         
     <Router>
     <Navbar />
