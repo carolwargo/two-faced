@@ -41,7 +41,7 @@ export default function Header() {
             </h4>
             
               <MDBBtn tag="a" size="lg">
-                <a href="#start" style={{color:'white'}}>Learn More</a>
+                <a href="/services" style={{color:'white'}}>Learn More</a>
               </MDBBtn>
             </div>
           </div>

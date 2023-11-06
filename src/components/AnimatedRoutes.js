@@ -1,53 +1,67 @@
 import React from "react";
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "../views/Home/Home";
 import About from "../views/About/About";
+import Layout from "../components/Layouts/Layout";
+
+import ServiceLayout from "../components/Layouts/ServiceLayout";
 import Services from "../views/Services/Services";
-import Consulting from "../views/Consulting/Consulting";
-import Programs from "../views/Programs/Programs";
+import WebDesign from "../views/Services/WebDesign/WebDesign";
+import SoftwareDev from "../views/Services/SoftwareDev/index";
+import DigitalMarketing from "../views/Services/DigitalMarketing/index";
+import GraphicDesign from "../views/Services/GraphicDesign/index";
+import MobileApp from "../views/Services/MobileApp/index";
+import SocialMedia from "../views/Services/SocialMedia/index";
+
+import AdditionalLayout from "../components/Layouts/AdditionalLayout";
+import Consulting from "../views/AdditionalServices/Consulting/Consulting";
+import Support from "../views/AdditionalServices/Support/Support";
+import Training from "../views/AdditionalServices/Training/Training";
+import Programs from "../views/AdditionalServices/Programs/Programs";
+
 import Contact from "../views/Contact/Contact";
 
-import WebDesign from "./Services/CoreServices/WebDesign/index";
-import SoftwareDev from "./Services/CoreServices/SoftwareDev/index";
-import DigitalMarketing from "./Services/CoreServices/DigitalMarketing/index";
-import Ecommerce from "./Services/CoreServices/ECommerce/index";
-import SocialMedia from "./Services/CoreServices/SocialMedia/index";
-import GraphicDesign from "./Services/CoreServices/GraphicDesign/index";
-import MobileApp from "./Services/CoreServices/MobileApp/index";
+import { AnimatePresence } from "framer-motion";
+import AdditionalServices from "../views/AdditionalServices/AdditionalServices";
 
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {AnimatePresence} from "framer-motion"
-function AnimatedRoutes(){
-    const location = useLocation(); 
-
-
-    return(
-
-        <AnimatePresence>
-        <Routes location={location} key={location.pathname}>
-     
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/consulting" element={<Consulting />} />
-        <Route path="/programs" element={<Programs />} />
-        <Route path="/contact" element={<Contact />} />
-        
-
-        <Route path="/web-design" element={<WebDesign />} />
-        <Route path="/software-dev" element={<SoftwareDev />} />
-        <Route path="/digital-marketing" element={<DigitalMarketing />} />
-        <Route path="/graphic-design" element={<GraphicDesign />} />
-        <Route path="/ecommerce" element={<Ecommerce />} />
-        <Route path="/social-media" element={<SocialMedia />} />
-        <Route path="/mobile-app" element={<MobileApp />} />
-       
-       
+function AnimatedRoutes() {
   
-      </Routes>
+  const location = useLocation();
 
-      </AnimatePresence>
-    )   
+  return (
+    <AnimatePresence>
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Layout />} />
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
+
+        <Route path="/services" element={<ServiceLayout />}>
+          <Route index element={<Services />} />
+          <Route path="web-design" element={<WebDesign />} />
+
+          <Route path="software-dev" element={<SoftwareDev />} />
+
+          <Route path="graphic-design" element={<GraphicDesign />} />
+
+          <Route path="digital-marketing" element={<DigitalMarketing />} />
+
+          <Route path="mobile-app" element={<MobileApp />} />
+
+          <Route path="social-media" element={<SocialMedia />} />
+          </Route>
+
+
+          <Route path="/additional-services" element={<AdditionalLayout />}>
+          <Route index element={<AdditionalServices />} />
+          <Route path="consulting" element={<Consulting />} />
+          <Route path="support" element={<Support />} />
+          <Route path="training" element={<Training />} />
+          <Route path="programs" element={<Programs />} />
+        </Route>
+
+      </Routes>
+    </AnimatePresence>
+  );
 }
 export default AnimatedRoutes;

@@ -1,67 +1,75 @@
-import React, { useState } from 'react';
-import {
-  MDBNavbar,
-  MDBContainer,
-  MDBNavbarBrand,
-  MDBIcon,
-  MDBNavbarNav,
-  MDBNavbarItem,
-  MDBNavbarLink,
-  MDBNavbarToggler,
-  MDBCollapse,
- 
-} from 'mdb-react-ui-kit';
-import '../Navbar/navbar.css'
-import LogoIcon from "../../assets/images/LogoIcon.png"
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+import { Container } from "react-bootstrap";
+
+import "../Navbar/navbar.css";
+import LogoIcon from "../../assets/images/LogoIcon.png";
 
 export default function Nav() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const activeStyles = {
+    fontWeight: "bold",
+    textDecoration: "underline",
+    color: "#161616",
+  };
 
   return (
-    <div className='bg-white'>
-      <MDBNavbar expand='lg' className='bg-white '
-            style={{
-              boxShadow: '0 0.5rem 1rem rgba(0, 0, 0, 0.15)'
-             }}
-             >
-        <MDBContainer fluid className='bg-white'>
-          <MDBNavbarBrand href='#' className='bg-white mr-auto'>
-            <img src={LogoIcon} alt='LogoIcon' 
-               style={{ width: '100px', height: 'auto', marginTop: '-1rem' }} 
-                 />
-          </MDBNavbarBrand>
-          <MDBNavbarToggler
-          className='bg-white'
-          type='button'
-          data-target='#navbarText'
-          aria-controls='navbarText'
-          aria-expanded='false'
-          aria-label='Toggle navigation'
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          <MDBIcon className='bg-white' icon='bars' />
-        </MDBNavbarToggler>
-       
-          <MDBCollapse navbar show={isMenuOpen}>
-          
-            <MDBNavbarNav className='collapse navbar-collapse mb-2 mb-lg-0 bg-white'>
-              <MDBNavbarItem>
-                <MDBNavbarLink className='bg-white' href='/'>Home</MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink className='bg-white' href='/about'>About</MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink className='bg-white' href='/services'>Services</MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink className='bg-white' href='/contact'>Contact</MDBNavbarLink>
-              </MDBNavbarItem>
-            </MDBNavbarNav>
-      
-          </MDBCollapse>
-        </MDBContainer>
-      </MDBNavbar>
+    <div className="bg-white">
+      <nav
+        className="bg-white "
+        style={{
+          boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.15)",
+        }}
+      >
+        <Container fluid className="bg-white">
+          <ul>
+         
+            <Link to="/" className="bg-white mr-auto">
+              <img
+                src={LogoIcon}
+                alt="LogoIcon"
+                style={{ width: "100px", height: "auto", marginTop: "-1rem" }}
+              />
+            </Link>
+            
+<li>
+            <NavLink
+              to="/"
+              style={({ isActive }) => (isActive ? activeStyles : null)}
+            >
+              Home
+            </NavLink>
+            </li>
+            <li>
+            <NavLink
+              to="about"
+              style={({ isActive }) => (isActive ? activeStyles : null)}
+            >
+              About
+            </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className="bg-white"
+                style={({ isActive }) => (isActive ? activeStyles : null)}
+                to="/services"
+              >
+                Services
+              </NavLink>
+              </li>
+
+              <li>
+            <NavLink
+              to="contact"
+              style={({ isActive }) => (isActive ? activeStyles : null)}
+            >
+              Contact
+            </NavLink>
+            </li>
+          </ul>
+        </Container>
+      </nav>
     </div>
   );
 }
